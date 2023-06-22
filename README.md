@@ -13,3 +13,5 @@ This project would analyze statistic of covid situation in Thailand. the project
 
 ### Google collab
 is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser. we use colab to preview the code that we would generate in this project
+
+![]()
