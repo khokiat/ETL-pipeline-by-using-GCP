@@ -42,20 +42,25 @@ report.to_csv('Covid_report',index=True)
 ![](https://github.com/khokiat/ETL-pipeline-by-using-GCP/blob/main/Picture/02FBF003-2CB5-4255-9176-D9DC6C7705D0.jpeg?raw=true)
 
 2. Compose cloud composer to set VM and apache airflow by setting name of composer, environment resources then create the composer. the composer would appear in the page and you would get bucket of this composer in cloud storage when running the code, the dag and data will be contained in buucket of composer.
-
+![](https://github.com/khokiat/ETL-pipeline-by-using-GCP/blob/main/Picture/1BCF8D5A-2DED-483D-AF6F-802AD8EE54F4.jpeg?raw=true)
 
 
 3. Prepare data warehouse, by create table and dataset in google bigquery this it the data warehouse that final result of pipeline will be located. we need to prepare table to specifie address of table in the code.
+![](https://github.com/khokiat/ETL-pipeline-by-using-GCP/blob/main/Picture/4DE1CF96-3179-4657-AEB5-9AE3B101118A.jpeg?raw=true)
 
 4. To prepare the DAG of pipeline, we need to prepare DAG script to control apache airflow. you can see the detail of DAG in the link --> [Pipeline definition](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/fundamentals.html) 
 for DAG script of this project i've attached code in DAGS folder.
 
 5. After getting the script, copy the DAG script into dags folder of composer bucket to run the pipeline. you can check status of pipeline by reaching to UI of airflow by acessing through composer, There is a link to connect to apache airflow. 
+![](https://github.com/khokiat/ETL-pipeline-by-using-GCP/blob/main/Picture/28DA3722-A5E5-4C11-9B6E-109F6C76D729.jpeg?raw=true)
 
 6. Check the pipeline status in the page, if pipline run successfully, all task in of pipeline would be green color
-
+![](https://github.com/khokiat/ETL-pipeline-by-using-GCP/blob/main/Picture/F5F765EF-05D5-46B1-B58A-735A3E96113F.jpeg?raw=true)
+![](https://github.com/khokiat/ETL-pipeline-by-using-GCP/blob/main/Picture/9939BCD5-2C12-44AC-8FC4-64F5859D1F84.jpeg?raw=true)
 7. After pipeline operating sucessfully,
-final data will be save into data warehouse that we set at the 3rd step. after then making data visualization by using google looker studio
+final data will be save into data warehouse that we set at the 3rd step.you can select or make temp view of table by query on google bigquery. after then making data visualization by using google looker studio
+
+
 
 8. Use Looker  studio to cennect to our table to make visualization
 
