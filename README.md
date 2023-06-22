@@ -59,8 +59,13 @@ for DAG script of this project i've attached code in DAGS folder.
 ![](https://github.com/khokiat/ETL-pipeline-by-using-GCP/blob/main/Picture/9939BCD5-2C12-44AC-8FC4-64F5859D1F84.jpeg?raw=true)
 7. After pipeline operating sucessfully,
 final data will be save into data warehouse that we set at the 3rd step.you can select or make temp view of table by query on google bigquery. after then making data visualization by using google looker studio
-
+![](https://github.com/khokiat/ETL-pipeline-by-using-GCP/blob/main/Picture/Image%2022-6-2566%20BE%20at%2017.05.jpg?raw=true)
 
 
 8. Use Looker  studio to cennect to our table to make visualization
+![](https://github.com/khokiat/ETL-pipeline-by-using-GCP/blob/main/Picture/Image%2022-6-2566%20BE%20at%2018.11.jpg?raw=true)
+
+From the dashboard, explain about covid infection rate in year 2021 and 2022 in thailand by using API from Open Government Data of Thailand.
+1. we found that total new case in 2022 is 4,971,439 people which increasing from 2021  that have patient is just 6,022 people
+2. both of year 2021 and 2022, Bankok is the province that has the most covid19 petient. By in 2021 covid19 petient in bankok is 454 people and in 2022 is 505,722 people.
 
